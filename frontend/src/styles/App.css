@@ -1,0 +1,117 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.app-header {
+  background-color: #4a5568;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.app-content {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 300px;
+  border-right: 1px solid #e2e8f0;
+  background-color: #f7fafc;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.reader-container {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.empty-state {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: #718096;
+  text-align: center;
+  padding: 1rem;
+}
+
+.books-list {
+  flex: 1;
+  overflow: auto;
+  padding: 1rem;
+}
+
+.books-list h3 {
+  margin-top: 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e2e8f0;
+  color: #2d3748;
+}
+
+.books-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.books-list li {
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  border: 1px solid #e2e8f0;
+  transition: all 0.2s;
+}
+
+.books-list li:hover {
+  background-color: #edf2f7;
+}
+
+.books-list li.selected {
+  background-color: #ebf8ff;
+  border-color: #4299e1;
+}
+
+.book-title {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: #2d3748;
+}
+
+.book-author {
+  font-size: 0.875rem;
+  color: #4a5568;
+  margin-bottom: 0.25rem;
+}
+
+.book-date {
+  font-size: 0.75rem;
+  color: #718096;
+}
+
+.error {
+  color: #e53e3e;
+  padding: 1rem;
+}
+
+.loading {
+  padding: 1rem;
+  text-align: center;
+  color: #4a5568;
+}
